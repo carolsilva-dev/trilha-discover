@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+h1 {
+    color: aqua;
+}
+
+p {
+    color: brown;
+}
+
+.testando-isso {
+    padding: 20px;
+    border: 10px solid;
+    border-color: blueviolet;
+    background-color: orangered;
+    color: #000080;
+    text-align: center;
+    margin: 40px;
+    font-size: 15px;
+    font-family: impact;
+    
+}
+strong {
+    color: #69d853;
+}
