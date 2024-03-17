@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="flexBox.css">
+</head>
+<body>
+   
+    <!-- Flex Box
+    
+    É um valor para aregra display do CSS, que modifica a disposição dos elementos;
+    Utilizamos desta maneira - display: flex;
+    O flex precisa ser inserido em um container, que contem elementos
+    Há duas direções: Row e column
+    Podemos tambem alterar o posicionamento de um item individualmente
+    É possivel alterar o alinhamento dos elementos, a até a ordem
+    
+    -->
+   
+   
+    <!-- layouts e evolução :
+
+     Normal Flow (fluxo) :
+
+   Ou flow layout é amaneira que os elementos 'block' e 'inline' ficam na pagina 
+  -->
+
+<p> Texto block com <strong style="background: green">inline</strong></p>
+
+<div style="background: green">block</div>
+
+
+ <!--
+    Tables 
+  É a maneira de tabelas onde a tag 'table' recebe um display 'table' fazendo com que os elementos internos  
+  com 'td' e 'tr' possam ser usados para montar uma tabela   
+ -->
+
+
+ <table>
+    <tr> <!-- tr = colunas-->
+        <td>Segunda</td>
+        <td>corrida</td>
+    </tr>
+
+    <tr>
+        <td>Terça</td> <!-- td = linhas-->
+        <td>caminhada</td>
+    </tr>
+
+     <tr>
+        <td>Quarta</td>
+        <td>futebol</td>
+     </tr>
+ </table>
+
+
+ <!--  Tabless:
+    uso das propriedades 'float', 'clear' para que os elementos possam mudar de posição na tela 
+ -->
+  
+    <div style="float: left">ESQUERDA</div>
+    <div style="float: right">DIREITA</div>
+    <div style="clear:both">normal flow</div>
+    <div>Esquerda</div>
+    <div>Direita</div>
+
+    <!--
+        Flex Box:
+
+     A caixa se torna flex, fazendo com que os elementos internos possam receber melhor:
+
+     - Alinhamneto
+     - Ordenação 
+     -Tamanhos flexiveis
+    -->
+
+    <!--
+        Terminologia:
+
+    - Flex Container 
+       - Flex item
+    - Nesting (elemento que contem outros elementos)
+    - Axis
+       - main
+         - start, end
+      - cross 
+        - start, end
+    - Flex sizing
+       - flexivel
+       - altera width/heightdos itens para preenchimento dos espaços do flex container 
+    -->
+   
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <!--
+        Propriedades do flex container:
+    * Direção dos items  
+    * Multi linhas 
+    * Alinhamento
+      * principal
+      * cruzado
+    * Espaços entre os itens
+
+
+    Direção dos itens:
+
+    - FLex é uma dimensão (horizontal ou vertical)
+    - Podemos mudar a direção com `flex-direction´
+    - valores: (row | row-reverse | column | column-reverse)
+    -->
+
+
+    <!--
+        Flex-wrap
+   - podemos usar multi linhas
+   - cada nova linha, um novo flex container
+    -->
+
+    <!--  Direção e multi linha em uma única propriedade
+
+        FLex-flow
+    - shorthand
+    - flex-direction || flex-wrap
+    -->
+
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+
+    <!-- Alinhamento dos itens no eixo principal
+
+    - Justify-contend
+    
+    * Alinhamento dos elementos dentro do container 
+    * Distribuição dos elementos
+
+    -- Valores
+
+    * flex-start
+    * flex-end
+    * center
+    * space-around
+    * space-between
+    * space-evenly
+    -->
+
+    <!-- Alinhamento dos itens no eixo cruzado
+    
+    -- Valores
+
+    * stretch
+    * flex-start
+    * flex-end
+    * center
+    -->
+
+
+   
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    
+}
+
+.box {
+    display: flex;
+    flex-flow: row;
+    border: 1px dashed red;
+}
+
+.box div {
+ border: 1px solid;
+ width: 80px;
+}

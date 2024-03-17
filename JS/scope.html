@@ -1,0 +1,37 @@
+ <!--# Scope 
+
+* Escopo determina a visibilidade de alguma variavel no JS 
+
+ # Block statement 
+
+```js
+
+// vamos iniciar um bloco 
+{
+    // aqui dentro é um bloco e posso colocar qualquer código 
+} // aqui fechamos o bloco 
+```
+
+o bloco, tambem criara um novo escopo. Chamamos de `block-scoped`-->
+
+ <!--O Scope ou Escopo determina a visibilidade de uma variável em um código, e para entender scope precisamos primeiramente entender block statement,
+ que é o código presente dentro de chaves. O escopo do var é global, ou seja, uma variável declarada com var poderá ser usada em todo o código.
+
+ Diferentemente de var, const e let são variáveis com escopo local, ou seja, só são visíveis no escopo onde foram criadas e em escopos interiores ao de criação. 
+ Em uma variável let, porém, pode-se alterar o valor em um escopo e o valor irá persistir no escopo de criação.-->
+
+<script>
+   { let x = 0
+    console.log(x)
+   }
+    
+</script>
+
+<script>
+    var x 
+    //var é global e, tambem local
+   console.log('> existe x antes do bloco?', x)
+  { x=0}
+
+  console.log('> existe x depois do bloco?', x)
+</script>

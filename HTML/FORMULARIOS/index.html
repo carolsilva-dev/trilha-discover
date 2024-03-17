@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">88888
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAGS entrada de dados </title>
+</head>
+<body>
+ <div>
+     <h1>email</h1>
+    <form action="">
+        <datalist id="emailslist">
+            <option>carolineolivera52@gmail.com.br</option>
+       </datalist>
+        
+           <input type="email"
+           placeholder="Email"
+           minlength="6"
+           maxlength="40"
+           list="emailslist"
+           >
+           <button type="submit">Enviar </button>
+       </form>  
+    </div>
+
+
+<div>
+    <H1>url</H1>
+    
+    <form action="">
+    <datalist id="urlsdata">
+        <option>http://meusite.com.br</option>
+    </datalist>
+      <input type="url"
+      placeholder="http://example.com"
+      pattern=".*\.com\.br\/.*"
+      list="urlsdata"
+      >
+      <button type="submit">Enviar </button>
+    </form>
+</div>
+  
+
+    
+</body>
+</html>
